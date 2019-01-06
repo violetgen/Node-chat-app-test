@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chat App</title>
-</head>
-<body>
-    <p>Welcome to chat app</p>
+    <title>Join | ChatApp</title>
 
-    <!-- lets load in the socketio library: -->
-    <script src="/socket.io/socket.io.js"></script>
-    <!-- because of the above import, we call: "io() for starting and keeping our connection alive:" -->
-    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body class="centered-form">
+    <div class="centered-form__form">
+        <form action="/chat.html">
+        <div class="form-field">
+            <h3>Join Chat</h3>
+        </div>
+        <div class="form-field">
+            <label for="">Display name</label>
+        </div>
+        <div class="form-field">
+            <input type="text" name="name" id="" autofocus>
+        </div>
+        <div class="form-field">
+            <label for="">Room name</label>
+            <input type="text" name="room" id="">
+        </div>
+        <div class="form-field">
+            <button>Join</button>
+        </div>
+    </form>
+    </div>
 </body>
 </html>
